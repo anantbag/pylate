@@ -133,7 +133,7 @@ def get_beir_triples(
 
     X = []
     for query, (_, query_documents) in zip(queries, qrels.items()):
-        for query_document in list(query_documents.keys()):
+        for query_document in list(query_documents.keys()):.
             # Building triples, query, positive document, random negative document
             X.append(
                 (
